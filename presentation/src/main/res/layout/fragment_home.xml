@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:contentScrim="@android:color/white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <!--app:layout_collapseMode="parallax"电影开屏效果-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_banner_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_200"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_home_banner0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="20dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenir_nexttltpro_demi"
+                        android:padding="10dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_36"
+                    android:background="#00000000"
+                    android:elevation="0dp"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_collapseMode="pin" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_6"
+                        android:foreground="?selectableItemBackground"
+                        android:padding="@dimen/dp_6"
+                        android:src="@drawable/ic_sort_variant"
+                        android:tint="@color/fontColor" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_setup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_6"
+                        android:foreground="?selectableItemBackground"
+                        android:padding="@dimen/dp_6"
+                        android:src="@drawable/ic_about_me"
+                        android:tint="@color/fontColor" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.logan.common.view.FixHpOSRecycleView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

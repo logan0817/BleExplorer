@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_welcome" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dp_62"
+        android:layout_marginEnd="@dimen/dp_26"
+        android:background="@drawable/bg_skip_btn"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_6"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_13"
+        tools:text="跳过3s" />
+
+</FrameLayout>

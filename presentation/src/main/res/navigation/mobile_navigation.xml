@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navi_home">
+
+    <fragment
+        android:id="@+id/navi_home"
+        android:name="com.logan.presentation.ui.home.HomeFragment"
+        android:label="@string/tab_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homefragment_to_bluetoothdevicefragment"
+            app:destination="@id/bluetoothDeviceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bluetoothDeviceFragment"
+        android:name="com.logan.presentation.ui.bluetoothdevice.BluetoothDeviceFragment"
+        android:label="AllDevicesInfoFragment"
+        tools:layout="@layout/fragment_bluetoothdevice" >
+
+        <argument
+            android:name="mac"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_bluetoothDeviceFragment_to_characteristicFragment"
+            app:destination="@id/characteristicFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/characteristicFragment"
+        android:name="com.logan.presentation.ui.characteristic.CharacteristicFragment"
+        android:label="CharacteristicFragment"
+        tools:layout="@layout/fragment_characteristic" >
+
+        <argument
+            android:name="mac"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+
+        <argument
+            android:name="characteristic"
+            app:argType="string" />
+    </fragment>
+
+
+
+</navigation>

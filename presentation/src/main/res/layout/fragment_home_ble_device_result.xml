@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemRootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/llLeftContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.logan.common.view.SignalView
+                android:id="@+id/signalView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rectBackgroundColor="@color/line_color"
+                app:rectBorderWidth="0"
+                app:signalCount="5"
+                app:signalRadius="8"
+                app:signalHighColor="@color/fontGray"
+                app:signalLowColor="@color/fontGray"
+                app:signalMiddleColor="@color/fontGray"
+                app:signalRectInterval="2"
+                app:signalTypeTextColor="@color/colorBlack"
+                app:signalTypeTextSize="6sp" />
+
+            <TextView
+                android:id="@+id/tvRssi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/avenir_nexttltpro_regular"
+                android:textColor="@color/fontGray"
+                android:textSize="8sp"
+                tools:text="Paireed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/llLeftContent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_nexttltpro_demi"
+                android:textColor="@color/fontGray"
+                android:textSize="16sp"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/tvMac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/avenir_nexttltpro_regular"
+                android:textColor="@color/fontGray"
+                android:textSize="15sp"
+                tools:text="00:00:00:00:00:00" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

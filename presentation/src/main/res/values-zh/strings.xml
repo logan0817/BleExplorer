@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">BleExplorer</string>
+    <string name="tab_home">首页</string>
+
+    <string name="splash_time">跳过 %ss</string>
+    <string name="app_exit_one_more_press">再按一次退出程序</string>
+
+    <string name="default_agree_permission">使用前请授权相关权限</string>
+
+    <string name="mine_about">关于我们</string>
+    <string name="bluetooth_not_available">蓝牙不可用</string>
+    <string name="unable_find_mac_device">找不到相应的MAC设备</string>
+    <string name="search">搜索</string>
+    <string name="sure">确定</string>
+
+
+    <string name="device_connecting">连接中</string>
+
+    <string name="service_location_title">启用定位服务</string>
+    <string name="service_ble_title">启用蓝牙服务</string>
+
+    <string name="permission_location_title">启用位置权限</string>
+    <string name="permission_ble_title">启用蓝牙权限</string>
+    <string name="setup_pair_success">配对成功</string>
+    <string name="setup_pair_fail">配对失败</string>
+    <string name="unsubscribe">UNSUBSCRIBE</string>
+    <string name="subscribe">SUBSCRIBE</string>
+    <string name="write_failed">写入失败</string>
+    <string name="please_check_input">请检查输入是否正确</string>
+    <string name="please_enter_hex_content">请输入十六进制内容</string>
+    <string name="properties">属性</string>
+    <string name="device_address">MAC地址</string>
+    <string name="manufacturerdata">广播包数据</string>
+    <string name="device_name">设备名称</string>
+    <string name="service_uuid">服务UUID</string>
+    <string name="characteristic_name">特征值名称</string>
+    <string name="characteristic_uuid">特征值UUID</string>
+    <string name="readable">Readable</string>
+    <string name="writable">Writable</string>
+    <string name="supports_notifications_indications">Supports notifications/indications</string>
+    <string name="able_to_be_read_from">能够从中读取</string>
+    <string name="able_to_be_written_to">能够被写入</string>
+    <string name="able_to_be_subsccribed_to_for_notifications_indications_on_changes_to_the_characteristic">能够订阅特性更改的通知/指示</string>
+    <string name="read">READ</string>
+    <string name="read_indicated_values">READ/INDICATED VALUES</string>
+    <string name="written_values">WRITTEN VALUES</string>
+    <string name="write">WRITE</string>
+</resources>

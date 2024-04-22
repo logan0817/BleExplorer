@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.logan.framework.weights.FakeStatusBarView
+            android:id="@+id/fakeStatusBarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg_color"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.logan.common.view.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:background="@color/app_bg_color"
+            app:layout_constraintTop_toBottomOf="@+id/fakeStatusBarView"
+            app:leftIcon="@drawable/ic_white_back"
+            app:leftTextColor="@color/white"
+            app:middleTextColor="@color/white"
+            app:rightIcon="@mipmap/ic_collect_normal_new" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingVertical="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_demi"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/properties"
+                    android:textColor="@color/fontColor"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="10dp"
+                    android:background="@color/fontColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_demi"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/device_address"
+                    android:textColor="@color/fontColor"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_regular"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="FF:FF:FF:FF:FF:FF"
+                    android:textColor="@color/fontColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_demi"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/service_uuid"
+                    android:textColor="@color/fontColor"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvServiceUUID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_regular"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:textColor="@color/fontColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="0000fff0-0000-1000-80000-00805f9b34fb" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_demi"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/characteristic_name"
+                    android:textColor="@color/fontColor"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCharacteristicName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_regular"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:textColor="@color/fontColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Serial Number" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_demi"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/characteristic_uuid"
+                    android:textColor="@color/fontColor"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCharacteristicUUID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_regular"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:textColor="@color/fontColor"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="00000a05-0000-1000-80000-00805f9b34fb" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivReadable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/avenir_nexttltpro_demi"
+                            android:maxLines="1"
+                            android:text="@string/readable"
+                            android:textColor="@color/fontColor"
+                            android:textSize="17sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/avenir_nexttltpro_regular"
+                            android:text="@string/able_to_be_read_from"
+                            android:textColor="@color/fontColor"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivWritable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/avenir_nexttltpro_demi"
+                            android:maxLines="1"
+                            android:text="@string/writable"
+                            android:textColor="@color/fontColor"
+                            android:textSize="17sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/avenir_nexttltpro_regular"
+                            android:text="@string/able_to_be_written_to"
+                            android:textColor="@color/fontColor"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivNotifyable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_wrong" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/avenir_nexttltpro_demi"
+                            android:maxLines="1"
+                            android:text="@string/supports_notifications_indications"
+                            android:textColor="@color/fontColor"
+                            android:textSize="17sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/avenir_nexttltpro_regular"
+                            android:text="@string/able_to_be_subsccribed_to_for_notifications_indications_on_changes_to_the_characteristic"
+                            android:textColor="@color/fontColor"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_nexttltpro_demi"
+                    android:foreground="?selectableItemBackground"
+                    android:maxLines="1"
+                    android:text="@string/read_indicated_values"
+                    android:textColor="@color/fontColor"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginVertical="10dp"
+                    android:background="@color/fontColor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <Button
+                        android:id="@+id/btnRead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/color_0159a5"
+                        android:text="@string/read"
+                        android:textColor="@color/white"
+                        tools:backgroundTint="@color/color_b2d0e9" />
+
+                    <Button
+                        android:id="@+id/btnNotify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="@color/color_0159a5"
+                        android:text="@string/subscribe"
+                        android:textColor="@color/white"
+                        tools:backgroundTint="@color/color_b2d0e9" />
+                </LinearLayout>
+
+                <com.logan.common.view.FixHpOSRecycleView
+                    android:id="@+id/readRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    tools:listitem="@layout/item_gattservice_entity_type3" />
+
+                <LinearLayout
+                    android:id="@+id/llWriteLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="20dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/avenir_nexttltpro_demi"
+                        android:foreground="?selectableItemBackground"
+                        android:maxLines="1"
+                        android:text="@string/written_values"
+                        android:textColor="@color/fontColor"
+                        android:textSize="17sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginVertical="10dp"
+                        android:background="@color/fontColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_write_input"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/color_0159a5"
+                            android:digits="0123456789ABCDEF"
+                            android:fontFamily="@font/avenir_nexttltpro_regular"
+                            android:hint="@string/please_enter_hex_content"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1"
+                            android:textColor="@color/fontColor"
+                            android:textColorHint="@color/fontGray"
+                            android:textSize="13sp"
+                            tools:backgroundTint="@color/color_b2d0e9" />
+
+                        <Button
+                            android:id="@+id/btnWrite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:backgroundTint="@color/color_0159a5"
+                            android:text="@string/write"
+                            android:textColor="@color/white"
+                            tools:backgroundTint="@color/color_0159a5" />
+                    </LinearLayout>
+
+                    <com.logan.common.view.FixHpOSRecycleView
+                        android:id="@+id/writeRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        tools:listitem="@layout/item_gattservice_entity_type3" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

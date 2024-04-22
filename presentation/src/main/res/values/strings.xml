@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">BleExplorer</string>
+    <string name="tab_home">Home</string>
+
+    <string name="splash_time">Skip %ss</string>
+    <string name="app_exit_one_more_press">Press again to exit the program</string>
+
+    <string name="default_agree_permission">Please authorize relevant permissions before using</string>
+
+    <string name="mine_about">About Us</string>
+    <string name="bluetooth_not_available">Bluetooth not available</string>
+    <string name="unable_find_mac_device">Unable to find corresponding MAC device</string>
+    <string name="search">Search</string>
+    <string name="sure">Confirm</string>
+
+
+    <string name="device_connecting">Connecting</string>
+
+    <string name="service_location_title">Enable Location Service</string>
+    <string name="service_ble_title">Enable Bluetooth Service</string>
+
+    <string name="permission_location_title">Enable Location Permission</string>
+    <string name="permission_ble_title">Enable Bluetooth Permission</string>
+    <string name="setup_pair_success">Paired successfully</string>
+    <string name="setup_pair_fail">Pairing failed</string>
+    <string name="unsubscribe">UNSUBSCRIBE</string>
+    <string name="subscribe">SUBSCRIBE</string>
+    <string name="write_failed">Write failed</string>
+    <string name="please_check_input">Please check if the input is correct</string>
+    <string name="please_enter_hex_content">Please enter hexadecimal content</string>
+    <string name="properties">Properties</string>
+    <string name="device_address">Device Address</string>
+    <string name="manufacturerdata">ManufacturerData</string>
+    <string name="device_name">Device Name</string>
+    <string name="service_uuid">Service UUID</string>
+    <string name="characteristic_name">Characteristic Name</string>
+    <string name="characteristic_uuid">Characteristic UUID</string>
+    <string name="readable">Readable</string>
+    <string name="writable">Writable</string>
+    <string name="supports_notifications_indications">Supports notifications/indications</string>
+    <string name="able_to_be_read_from">Able to be read from</string>
+    <string name="able_to_be_written_to">Able to be written to</string>
+    <string name="able_to_be_subsccribed_to_for_notifications_indications_on_changes_to_the_characteristic">Able to be subsccribed to for notifications/indications on changes to the characteristic</string>
+    <string name="read">READ</string>
+    <string name="read_indicated_values">READ/INDICATED VALUES</string>
+    <string name="written_values">WRITTEN VALUES</string>
+    <string name="write">WRITE</string>
+</resources>
