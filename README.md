@@ -1,5 +1,5 @@
 # BleExplorer
-## Jetpack Bluetooth DEMO, this project uses the Jetpack Bluetooth library to implement some daily functions that we use for development[Search, connect, discover services, Bluetooth operations [read, write, notify].
+## Jetpack Bluetooth DEMO, this project uses the Jetpack Bluetooth library to implement some daily functions that we use for development:Search, connect, discover services, Bluetooth operations [read, write, notify].
 
 ## AndroidX Bluetooth is a new addition to the Jetpack Suite of libraries. While currently in its alpha stage, the system already provides robust safety measures addressing common pitfalls in Android BLE development.
 
@@ -35,7 +35,7 @@ implementation "androidx.bluetooth:bluetooth:1.0.0-alpha02"
 # --------------  中文  --------------
 
 # BleExplorer
-## Jetpack蓝牙演示，这个项目使用Jetpack Bluetooth库来实现我们用于开发的一些日常功能[搜索，连接，发现服务，蓝牙操作[读，写，通知]。
+## Jetpack蓝牙演示，这个项目使用Jetpack Bluetooth库来实现我们用于开发的一些日常功能：搜索，连接，发现服务，蓝牙操作[读，写，通知]。
 
 ## AndroidX蓝牙是Jetpack库套件的新增功能。虽然目前处于阿尔法阶段，但该系统已经提供了强大的安全措施，解决了Android BLE开发中的常见陷阱。
 
