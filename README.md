@@ -63,7 +63,6 @@ implementation "androidx.bluetooth:bluetooth:1.0.0-alpha02"
 
 <table>
     <tr>
-        <td ><center><img src="https://img-blog.csdnimg.cn/direct/14337c9e9f2c4b1e9361e6d7adfd38c1.jpeg " >Open screen </center></td>
         <td ><center><img src="https://img-blog.csdnimg.cn/direct/ace2407e02824982897f71a7e534670f.jpeg"  >Search</center></td>
         <td><center><img src="https://img-blog.csdnimg.cn/direct/2d2ee77e3ab9467eacf21f40a64557f5.jpeg"  >Filter</center></td>
         <td ><center><img src="https://img-blog.csdnimg.cn/direct/ad2a8cbcaa014b9ca9eaa796acc3fde1.jpeg"  >Connecting devices</center> </td>
