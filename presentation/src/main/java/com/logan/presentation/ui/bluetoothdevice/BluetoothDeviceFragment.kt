@@ -66,7 +66,7 @@ class BluetoothDeviceFragment :
     @SuppressLint("MissingPermission")
     private fun connect(mac: String) = mViewModel.viewModelScope.launch {
         BleManager.connectGatt(mac) {
-            setupPair()
+//            setupPair()
             adapter.setData(getRecycleViewData(services))
             dismissLoading()
             //一旦lambda表达式支持完成，连接就会被断开。要否定这一点，需要在最后通过调用来挂起lambda。这杨还能控制设备何时断开连接
@@ -74,38 +74,6 @@ class BluetoothDeviceFragment :
         }
     }
 
-    private suspend fun setupPair() {
-        /**
-         * 举例设备连接上去需要配对，不配对设备会断开连接(如果没有配置要求，直接忽略该部分代码)
-         * 配对逻辑举例:连接成功以后需要在0a10写入 01A1 + [mac后六位]。
-         * 0a10未配对读取数据为00****，如果配对成功读取数据为01*****
-         */
-        val pairUUID = UUIDUtils.characteristicUuid("0a10")
-        val pairCharacteristic = BleManager.getCharacteristic(args.mac, pairUUID)
-        if (pairCharacteristic != null && BleManager.checkCharacteristicpropertyWrite(
-                pairCharacteristic.fwkCharacteristic
-            )
-        ) {
-            mViewModel.viewModelScope.launch {
-                val addressBytes = args.mac.hexStringToByteArray()
-                val securityAccessCommand =
-                    byteArrayOf(
-                        0x01,
-                        0xA1.toByte(),
-                        addressBytes[3],
-                        addressBytes[4],
-                        addressBytes[5]
-                    )
-                BleManager.writeCharacteristic(args.mac, pairUUID, securityAccessCommand)
-                val result = BleManager.readCharacteristic(args.mac, pairUUID)?.toHexString()
-                if (result?.startsWith("01") == true) {
-                    showToast(getString(R.string.setup_pair_success))
-                } else {
-                    showToast(getString(R.string.setup_pair_fail))
-                }
-            }
-        }
-    }
 
     fun disconnect() {
         BleManager.disconnect(args.mac)
