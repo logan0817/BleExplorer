@@ -1,4 +1,4 @@
-# BleExplorer
+## BleExplorer
 ## Jetpack Bluetooth DEMO, this project uses the Jetpack Bluetooth library to implement some daily functions that we use for development:Search, connect, discover services, Bluetooth operations [read, write, notify].
 
 ## AndroidX Bluetooth is a new addition to the Jetpack Suite of libraries. While currently in its alpha stage, the system already provides robust safety measures addressing common pitfalls in Android BLE development.
@@ -16,13 +16,13 @@ implementation "androidx.bluetooth:bluetooth:1.0.0-alpha02"
 
 ## How to use: Look at the code, or download demoapk
 
-## Demo.apk [download](apk/app-debug.apk)
+## Demo.apk [Click to download](apk/app-debug.apk)
 
-# Demo BleExplorer download link: [https://github.com/logan0817/BleExplorer](https://github.com/logan0817/BleExplorer)
+## Demo BleExplorer download link: [https://github.com/logan0817/BleExplorer](https://github.com/logan0817/BleExplorer)
 ![DEMO下载地址链接:](https://img-blog.csdnimg.cn/direct/0240c3ccee1a49ea8c63b184ac3c839e.png)
 
-# Demo BleExplorer Github Repository link: [https://fir.xcxwo.com/BleExplorer](https://fir.xcxwo.com/BleExplorer)
-# Demo Screenshot
+## Demo BleExplorer Github Repository link: [https://fir.xcxwo.com/BleExplorer](https://fir.xcxwo.com/BleExplorer)
+## Demo Screenshot
 
 <table>
     <tr>
@@ -37,7 +37,7 @@ implementation "androidx.bluetooth:bluetooth:1.0.0-alpha02"
 
 # --------------  中文  --------------
 
-# BleExplorer
+## BleExplorer
 ## Jetpack蓝牙演示，这个项目使用Jetpack Bluetooth库来实现我们用于开发的一些日常功能：搜索，连接，发现服务，蓝牙操作[读，写，通知]。
 
 ## AndroidX蓝牙是Jetpack库套件的新增功能。虽然目前处于阿尔法阶段，但该系统已经提供了强大的安全措施，解决了Android BLE开发中的常见陷阱。
@@ -57,11 +57,11 @@ implementation "androidx.bluetooth:bluetooth:1.0.0-alpha02"
 
 ## Demo.apk [点击下载](apk/app-debug.apk)
 
-# DEMO BleExplorer 下载地址链接: [https://fir.xcxwo.com/BleExplorer](https://fir.xcxwo.com/BleExplorer)
+## DEMO BleExplorer 下载地址链接: [https://fir.xcxwo.com/BleExplorer](https://fir.xcxwo.com/BleExplorer)
 ![DEMO BleExplorer 下载地址链接:](https://img-blog.csdnimg.cn/direct/0240c3ccee1a49ea8c63b184ac3c839e.png)
-# Demo BleExplorer Github 仓库地址: [https://github.com/logan0817/BleExplorer](https://github.com/logan0817/BleExplorer)
+## Demo BleExplorer Github 仓库地址: [https://github.com/logan0817/BleExplorer](https://github.com/logan0817/BleExplorer)
 
-# Demo 截图
+## Demo 截图
 <table>
     <tr>
         <td ><center><img src="https://img-blog.csdnimg.cn/direct/ace2407e02824982897f71a7e534670f.jpeg"  >搜索</center></td>
