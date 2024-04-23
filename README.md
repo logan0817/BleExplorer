@@ -15,6 +15,9 @@ implementation "androidx.bluetooth:bluetooth:1.0.0-alpha02"
 ## Note: As part of integration testing/advise people not to use it in production as it is still in alpha version.
 
 ## How to use: Look at the code, or download demoapk
+
+## Demo.apk [download](apk/app-debug.apk)
+
 # Demo BleExplorer download link: [https://github.com/logan0817/BleExplorer](https://github.com/logan0817/BleExplorer)
 ![DEMO下载地址链接:](https://img-blog.csdnimg.cn/direct/0240c3ccee1a49ea8c63b184ac3c839e.png)
 
@@ -51,6 +54,8 @@ implementation "androidx.bluetooth:bluetooth:1.0.0-alpha02"
 ## 注意：作为集成测试的一部分/让人们不要在生产中使用它，因为它仍处于alpha版本。
 
 ## 如何使用：查看代码，或下载demoapk
+
+## Demo.apk [点击下载](apk/app-debug.apk)
 
 # DEMO BleExplorer 下载地址链接: [https://fir.xcxwo.com/BleExplorer](https://fir.xcxwo.com/BleExplorer)
 ![DEMO BleExplorer 下载地址链接:](https://img-blog.csdnimg.cn/direct/0240c3ccee1a49ea8c63b184ac3c839e.png)
